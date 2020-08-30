@@ -4,11 +4,10 @@ Este repositório contém um processador básico feito em Verilog HDL
 O processador realiza instruções simples como as operações lógicas básicas (and, or e not), adição e subtração, operações em memória (load e store), cópia de valores, cómpia condicional e copia de instrução. Para desenvolver o processador utilizamos os módulos registrador, multiplexador, unidade lógica e arimética e banco de registradores desenvolvidos anteriormente. O principais pontos trabalhados nessa prática foram as etapas de execução das instruções, o que será explicado com mais detalhes na próxima seção. A arquitetura desenvolvida utiliza uma palavra de 16 bits que descreve uma instrução a ser executada. E se tratando de instruções, a palavra segue o formato mostrado na tabela a seguir.
 
 
-Índice      |   15    |    11   |    8   |   5    | 0
-_________________________________________________________
-Significado	| Opcode  | addr x  | addr y | addr z | - 
-_________________________________________________________
-Comprimento	| 4 bits  | 3 bits  | 3 bits | 3 bits | 3 bits
+| Índice      | 15     | 11     | 8      | 5      | 0      |
+|-------------|--------|--------|--------|--------|--------|
+| Significado | Opcode | addr x | addr y | addr z | \-     |
+| Complemento | 4 bits | 3 bits | 3 bits | 3 bits | 3 bits |
 
 
 ## Processador
